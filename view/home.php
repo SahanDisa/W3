@@ -6,5 +6,6 @@
 </head>
 <body>
     <h1>Welcome to home</h1>
+    <a href="/W3/view/mailView.php">Send Mails</a>
 </body>
 </html>

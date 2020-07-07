@@ -19,7 +19,8 @@
         </p>
         <br />
         <p>
-            <button type="submit" name="submit"><span>Login</span></button> <button type="reset"><span>Cancel</span></button>
+            <button type="submit" name="submit"><span>Login</span></button> 
+            <button type="reset"><span>Cancel</span></button>
         </p>
     </form>
 </body>

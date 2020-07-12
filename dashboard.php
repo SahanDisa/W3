@@ -25,14 +25,14 @@
       </ol>
       <h1>Welcome to Dashboard</h1>
       <hr>
-      <h3>You are login as <strong><?php echo getUserAccessRoleByID($_SESSION['user_role_id']); ?></strong></h3>>
+      <h3>You are login as <strong><?php echo getUserAccessRoleByID($_SESSION['user_role_id']); ?></strong></h3>
 	  
 		<ul>
 			<li><strong>John Doe</strong> has <strong>Administrator</strong> rights so all the left bar items are visible to him</li>
 			<li><strong>Sahan</strong> has <strong>Contract</strong> rights and he doesn't have access to Settings</li>
 			<li><strong>Shanuka</strong> has <strong>Accountant</strong> rights and she can't have access to Appearance, Components and Settings</li>
-			<li><strong>Udara</strong> has <strong>Contributor</strong> rights and he has only access Relevant</li>
-			<li><strong>Supun</strong> has <strong>Contributor</strong> rights and he has only access Relevant</li>
+			<li><strong>Udara</strong> has <strong>Stock Keeper</strong> rights and he has only access Relevant</li>
+			<li><strong>Supun</strong> has <strong>Dashboard Faility</strong> rights and he has only access Relevant</li>
 		</ul>	
 
       

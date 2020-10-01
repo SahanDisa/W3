@@ -1,3 +1,7 @@
+<?php
+// require_once('view/header.php'); 
+// require_once('view/left_sidebar.php'); 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,3 +53,4 @@
 <script src="../assets/js/reg-script.js"></script>
 </body>
 </html>
+<!-- <?php require_once('view/footer.php'); ?>	 -->

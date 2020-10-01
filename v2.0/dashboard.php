@@ -8,8 +8,8 @@
 	}		
 	
 	require_once('inc/config.php');
-	require_once('layouts/header.php'); 
-	require_once('layouts/left_sidebar.php'); 
+	require_once('view/header.php'); 
+	require_once('view/left_sidebar.php'); 
 	
 	
 ?>
@@ -40,4 +40,4 @@
     </div>
     <!-- /.container-fluid-->
 	
-<?php require_once('layouts/footer.php'); ?>	
+<?php require_once('view/footer.php'); ?>	

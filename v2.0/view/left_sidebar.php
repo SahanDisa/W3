@@ -19,33 +19,33 @@
           </a>
         </li>
 		<?php 
-		//only visible to admin and editor
+		//only visible to admin and owner
 		if($_SESSION['user_role_id'] != 4){?>
 		
 			 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
 			  <a class="nav-link" href="#">
 				<i class="fa fa-fw fa fa-copy"></i>
-				<span class="nav-link-text">Pages</span>
+				<span class="nav-link-text">Dashboard</span>
 			  </a>
 			</li>
 			
 			<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
 			  <a class="nav-link" href="#">
 				<i class="fa fa-fw fa-circle-o-notch"></i>
-				<span class="nav-link-text">Categoris</span>
+				<span class="nav-link-text">Reports</span>
 			  </a>
 			</li>
 		
 		<?php }?>
 		
 		<?php 
-		//only visible to admin and editor
+		//only visible to admin and owner
 		if(($_SESSION['user_role_id'] == 1) || $_SESSION['user_role_id'] == 2 ){?>
 		
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-wrench"></i>
-            <span class="nav-link-text">Appearance</span>
+            <span class="nav-link-text">Contract</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>

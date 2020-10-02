@@ -15,24 +15,24 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="login/register_view.php">
             <i class="fa fa-fw fa fa-wpforms"></i>
-            <span class="nav-link-text">Users</span>
+            <span class="nav-link-text">Reports/Charts</span>
           </a>
         </li>
 		<?php 
 		//only visible to admin and owner
-		if($_SESSION['user_role_id'] != 4){?>
+		if($_SESSION['user_role_id'] == 1){?>
 		
 			 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
 			  <a class="nav-link" href="#">
 				<i class="fa fa-fw fa fa-copy"></i>
-				<span class="nav-link-text">Dashboard</span>
+				<span class="nav-link-text">Notification</span>
 			  </a>
 			</li>
 			
 			<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
 			  <a class="nav-link" href="#">
 				<i class="fa fa-fw fa-circle-o-notch"></i>
-				<span class="nav-link-text">Reports</span>
+				<span class="nav-link-text">Admin Area</span>
 			  </a>
 			</li>
 		
@@ -40,7 +40,7 @@
 		
 		<?php 
 		//only visible to admin and owner
-		if(($_SESSION['user_role_id'] == 1) || $_SESSION['user_role_id'] == 2 ){?>
+		if($_SESSION['user_role_id'] == 1 || $_SESSION['user_role_id'] == 2 ){?>
 		
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
@@ -49,42 +49,51 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
-              <a href="#">Themes</a>
-            </li>
-            <li>
-              <a href="#">Menus</a>
+              <a href="#">Contract</a>
             </li>
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-file"></i>
-            <span class="nav-link-text">Components</span>
+            <span class="nav-link-text">Contract Settings</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="#">Login Page</a>
+              <a href="#">Add Contract</a>
             </li>
             <li>
-              <a href="#">Registration Page</a>
+              <a href="#">View Contract</a>
             </li>
             <li>
-              <a href="#">Forgot Password Page</a>
+              <a href="#">Update Contract</a>
             </li>
             <li>
-              <a href="#">Blank Page</a>
+              <a href="#">Reference</a>
             </li>
           </ul>
         </li>
   
 		<?php } ?>
 		<?php 
-		//only visible to admin
-		if($_SESSION['user_role_id'] == 1){?>
+		//only visible to admin/accountant
+		if($_SESSION['user_role_id'] == 1 || $_SESSION['user_role_id'] == 3){?>
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
 			<a class="nav-link" href="#">
 				<i class="fa fa-fw fa fa-gear"></i>
-				<span class="nav-link-text">Settings</span>
+				<span class="nav-link-text">Expense</span>
+			</a>
+		</li>
+    <?php
+		}
+		?>
+    <?php
+    //only visible to admin/stock keeper
+    if($_SESSION['user_role_id'] == 1 || $_SESSION['user_role_id'] == 4){?>
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+			<a class="nav-link" href="#">
+				<i class="fa fa-fw fa fa-gear"></i>
+				<span class="nav-link-text">Inventory</span>
 			</a>
 		</li>
 		

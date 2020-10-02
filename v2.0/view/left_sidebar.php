@@ -99,7 +99,7 @@
       <ul class="navbar-nav ml-auto">
 
         <li class="nav-item">
-          <a class="nav-link" href="index.php?logout=true">
+          <a class="nav-link" href="../index.php?logout=true">
             <i class="fa fa-fw fa-sign-out"></i>Logout
 		  </a>
         </li>

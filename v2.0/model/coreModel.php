@@ -41,4 +41,6 @@ if(isset($_GET['lmsg']) && $_GET['lmsg'] == true)
 {
 	$errorMsg = "Login required to access dashboard";
 }
+
+
 ?>
